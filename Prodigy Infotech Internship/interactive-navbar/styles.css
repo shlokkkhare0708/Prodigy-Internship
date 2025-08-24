@@ -1,0 +1,51 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  z-index: 1000;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 5px;
+}
+
+.nav-menu li a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.scrolled {
+  background-color: #222;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+main {
+  padding-top: 80px;
+}
+
+section {
+  height: 100vh;
+  padding: 2rem;
+  border-bottom: 1px solid #ccc;
+}
